@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/info" method="pos">
+        <dl>
+            <dt>Nome</dt>
+            <dd><input type="text" name='nome'></dd>
+            <dt>Sobrenome</dt>
+            <dd><input type="text" name='sobreNome'></dd>
+            <dt>Idade</dt>
+            <dd><input type="number" name="Idade"></dd>
+            <dt>País</dt>
+            <dd><input type="text" name=""></dd>
+        </dl>
+        <input type="submit">
+    </form>
+    <p>Nome: <%= nome %> </p>
+    <p>Sobrenome:  <%= sobreNome %> </p>
+    <p>Idade: <%= idade %> </p>
+    <p>País: <%= pais %> </p>
+    <form action="/voltar" method="get">
+        <input type="submit" name="Voltar" value="Voltar">
+    </form>
+</body>
+</html>

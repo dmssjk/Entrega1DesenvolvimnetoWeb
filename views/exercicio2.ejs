@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio2</title>
+</head>
+<body>
+    
+    <form action="/nota" method="post">
+        <dl>
+            <dt>Atividade prática em laboratório:</dt>
+            <dd><input type="text" name='atvLab'></dd>
+            <dt>Prova do Semestre:</dt>
+            <dd><input type="text" name="provaSemestre"></dd>
+            <dt>Trabalho Teórico</dt>
+            <dd><input type="text" name="trabalhoTeorico"></dd>
+        </dl>
+        
+
+        <input type="submit" name="enviar" value="Enviar">
+    </form>
+
+    <h2><%= resposta %></h2>
+
+    <form action="/voltar" method="get">
+        <input type="submit" name="Voltar" value="Voltar">
+    </form>
+
+</body>
+</html>
